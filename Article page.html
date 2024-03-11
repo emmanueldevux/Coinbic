@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito Sans"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Archivo Expanded"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e7fa33c202.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Coinbic blog</title>
+  </head>
+  <body>
+    <main>
+      <header class="primary-header">
+        <div class="container">
+          <div class="nav-wrapper">
+            <div class="website-logo-container">
+              <a
+                class="website-logo"
+                href="index.html"
+              >
+                <span class="coinbic-logo">
+                  <img
+                    loading="lazy"
+                    src="/Icons/coinbic-logo.svg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </span>
+              </a>
+            </div>
+
+            <div class="left-navigation">
+              <!--  ------------------------navigation list starts--------------->
+              <nav
+                class="primary-nav"
+                id="primary-nav"
+              >
+                <ul
+                  role="list"
+                  class="nav-list"
+                  id="primary-nav"
+                >
+                  <li class="nav-li">
+                    <a href="#my-about">Pricing</a>
+                  </li>
+                  <li class="nav-li">
+                    <a href="#my-about">About us</a>
+                  </li>
+                  <li class="nav-li">
+                    <a href="#my-exchange">Results</a>
+                  </li>
+                  <li class="nav-li">
+                    <a href="#my-exchange">Contact</a>
+                  </li>
+                  <li class="nav-li">
+                    <a href="#my-exchange">
+                      Blog
+                      <span>></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <!--  ------------------------navigation list ends--------------------->
+
+              <!--  ------------------------ hamburger button  b starts----------------------------------->
+
+              <!--------------------------hamburger button ends---------------------------------->
+            </div>
+
+            <!-- ---------------------------right side button and toggle----------------------------- -->
+            <div class="right-side">
+              <div class="toogle">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  value=""
+                />
+                <label
+                  for="checkbox"
+                  class="label"
+                >
+                  <div class="ball"></div>
+
+                  <i class="fas fa-moon"></i>
+
+                  <i class="fas fa-sun"></i>
+                </label>
+              </div>
+
+              <button
+                class="botton-border right-side-button"
+              >
+                Subscribe
+              </button>
+
+              <button
+                class="menu"
+                aria-controls="primary-nav"
+                aria-expanded="false"
+              >
+                <span>toggle menu</span>
+              </button>
+            </div>
+
+            <!-- ---------------------------right side button and toggle----------------------------- -->
+          </div>
+        </div>
+      </header>
+
+      <!-- --------------------------tricker tape container for widgert starts here------------------- -->
+      <div
+        id="ticker-tape-container"
+        data-symbol="bitcoin,ethereum,binancecoin,solana,ripple,shiba-inu,pepe"
+        data-v-app
+      >
+        <div class="ticker-tape ticker-tape--is-loaded">
+          <div class="tricker-tape__container" id="parentContainer" >
+            <!-- ----------tricker tape ------------- -->
+
+            <div class="tricker-tape-wrapper" id="wrapper1">
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="bitcoin">
+                <img
+                  loading="lazy"
+                 src="https://crypto.news/images/icons/bitcoin.svg"
+                  width="24"
+                  height="24"
+                  alt=""Bitcoin
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Bitcoin (BTC)
+                </div>
+
+             
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="bitcoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="bitcoin_24h_change"
+                  ></span> <i
+                    id="bitcoin_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="ethereum">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/ethereum.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                 Ethereum (ETH)
+                </div>
+
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="ethereum"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="ethereum_24h_change"
+                  ></span> <i
+                    id="ethereum_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="binancecoin">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/binancecoin.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Binance Coin (BNB)
+                </div>
+
+          
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="binancecoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="binancecoin_24h_change"
+                  ></span> <i
+                    id="binancecoin_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="cardano">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/cardano.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Cardano (ADA)
+                </div>
+
+          
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="binancecoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="cardano_24h_change"
+                  ></span> <i
+                    id="ethereum_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="solana">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/solana.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                solana (SOL)
+                </div>
+
+                
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="solana"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="solana_24h_change"
+                  ></span> <i
+                    id="solana_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="worldcoin">
+                <img
+                  loading="lazy"
+                  src="https://assets.coingecko.com/coins/images/31069/small/worldcoin.jpeg?1690182386"
+                  width="24"
+                  height="24"
+                  alt="wld"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                World Coin (WLD)
+                </div>
+
+      
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="worldcoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="worldcoin_24h_change"
+                  ></span> <i
+                    id="ethereum_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="pepe">
+                <img
+                  loading="lazy"
+                  src="https://assets.coingecko.com/coins/images/29850/small/pepe-token.jpeg?1682922725"
+                  width="24"
+                  height="24"
+                  alt="pepe"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Pepe (PEPE)
+                </div>
+
+             
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="ethereum"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="pepe_24h_change"
+                  ></span> <i
+                    id="pepe_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="dogecoin">
+                <img
+                  loading="lazy"
+                  src="https://assets.coingecko.com/coins/images/5/small/dogecoin.png?1547792256"
+                  width="24"
+                  height="24"
+                  alt="pepe"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Doge Coin (DOGE)
+                </div>
+
+        
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="dogecoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="dogecoin_24h_change"
+                  ></span> <i
+                    id="dogecoin_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="shiba-inu">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/shiba-inu.svg"
+                  width="24"
+                  height="24"
+                  alt="shib"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+               Shiba Inu (SHIB)
+                </div>
+
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="ethereum"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="shiba-inu_24h_change"
+                  ></span> <i
+                    id="shiba-inu_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+
+
+
+
+        
+            </div>
+            <div class="tricker-tape-wrapper" id="wrapper2">
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="bitcoin">
+                <img
+                  loading="lazy"
+                 src="https://crypto.news/images/icons/bitcoin.svg"
+                  width="24"
+                  height="24"
+                  alt=""Bitcoin
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Bitcoin (BTC)
+                </div>
+
+             
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="bitcoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="bitcoin_24h_change"
+                  ></span> <i
+                    id="bitcoin_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="ethereum">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/ethereum.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                 Ethereum (ETH)
+                </div>
+
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="ethereum"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="ethereum_24h_change"
+                  ></span> <i
+                    id="ethereum_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="binancecoin">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/binancecoin.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Binance Coin (BNB)
+                </div>
+
+          
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="binancecoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="binancecoin_24h_change"
+                  ></span> <i
+                    id="binancecoin_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="cardano">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/cardano.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Cardano (ADA)
+                </div>
+
+          
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="binancecoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="cardano_24h_change"
+                  ></span> <i
+                    id="ethereum_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="solana">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/solana.svg"
+                  width="24"
+                  height="24"
+                  alt="BNB"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                solana (SOL)
+                </div>
+
+                
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="solana"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="solana_24h_change"
+                  ></span> <i
+                    id="solana_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="worldcoin">
+                <img
+                  loading="lazy"
+                  src="https://assets.coingecko.com/coins/images/31069/small/worldcoin.jpeg?1690182386"
+                  width="24"
+                  height="24"
+                  alt="wld"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                World Coin (WLD)
+                </div>
+
+      
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="worldcoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="worldcoin_24h_change"
+                  ></span> <i
+                    id="ethereum_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="pepe">
+                <img
+                  loading="lazy"
+                  src="https://assets.coingecko.com/coins/images/29850/small/pepe-token.jpeg?1682922725"
+                  width="24"
+                  height="24"
+                  alt="pepe"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Pepe (PEPE)
+                </div>
+
+             
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="ethereum"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="pepe_24h_change"
+                  ></span> <i
+                    id="pepe_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="dogecoin">
+                <img
+                  loading="lazy"
+                  src="https://assets.coingecko.com/coins/images/5/small/dogecoin.png?1547792256"
+                  width="24"
+                  height="24"
+                  alt="pepe"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+                Doge Coin (DOGE)
+                </div>
+
+        
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="dogecoin"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="dogecoin_24h_change"
+                  ></span> <i
+                    id="dogecoin_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+              <div class="ticker-tape__item coin" data-coin-id="shiba-inu">
+                <img
+                  loading="lazy"
+                  src="https://crypto.news/images/icons/shiba-inu.svg"
+                  width="24"
+                  height="24"
+                  alt="shib"
+                  class="ticker-tape__image"
+                />
+
+                <div class="ticker-tape__name">
+               Shiba Inu (SHIB)
+                </div>
+
+                <div class="ticker-tape__data">
+                  <span
+                    class="coin-price ticker-tape__price"
+                    id="ethereum"
+                  ></span>
+
+                  <span
+                    class="coin-24h-change ticker-tape__change ticker-tape__change--down"
+                    id="shiba-inu_24h_change"
+                  ></span> <i
+                    id="shiba-inu_arrow"
+                    class="coin-arrow"
+                  ></i>
+
+                  
+                </div>
+              </div>
+              <!-- --------------------------container for my crypto widgert starts here---------------- -->
+
+
+
+
+
+        
+            </div>
+
+
+
+       
+          
+
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------rticker tape container for my crypto---------------- -->
+
+      <!-- ---------------------------------------ad section starts here------------------------------------ -->
+      <div class="ad-section spacing-block-end-40">
+        <div class="container">
+          <div class="ad-wrapper ad-postpage-none">
+            <img
+              loading="lazy"
+              src="/Image/Banner image.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------ad section ends here-------------------------------- -->
+
+      <section class="">
+        <div class="container">
+          <div class="content-layout spacing-block-end-80">
+            <div class="article-container">
+              <header class="article-header">
+                <aside class="article-light">
+                  <a href="">News</a>
+                </aside>
+
+                <h1>
+                  How to make sure you’re marketing to Gen Z
+                  the right way
+                </h1>
+
+                <div
+                  class="post-details spacing-block-end-20"
+                >
+                  <div class="post-author-small">
+                    <img
+                      loading="lazy"
+                      src="/Icons/profile.png"
+                      alt=""
+                      class="author-image"
+                    />
+
+                    <p>emmanuel</p>
+                  </div>
+                  <div class="post-date">
+                    <i
+                      class="fa-regular fa-calendar-days"
+                    ></i>
+                    <p>12 jan 2020</p>
+                  </div>
+                  <div class="read-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>10 minuites</p>
+                  </div>
+                </div>
+              </header>
+
+              <div class="post-header-image">
+                <img
+                  src="/Image/ai.webp"
+                  alt=""
+                />
+              </div>
+
+              <div class="post-detail-container">
+                <div class="-socials">
+                  <div class="post-social-main">
+                    <a href="">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="">
+                      <i class="fa-brands fa-telegram"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="post-details-content">
+                  <p>
+                    At the recent AWS Web3/Blockchain Summit
+                    in New York City, Amazon said it would
+                    expand its AMB services to include
+                    Access and Query functions to enhance
+                    their support for web3 developers.
+                  </p>
+
+                  <p>
+                    With the introduction of AMB Access,
+                    developers can utilize standard remote
+                    procedure calls (RPCs) to interact with
+                    digital assets and distributed
+                    applications across multiple
+                    blockchains, beginning with Bitcoin,
+                    without needing specialized
+                    infrastructure.
+                  </p>
+
+                  <h3>Growth in web3 continues</h3>
+                  <p>
+                    At the recent AWS Web3/Blockchain Summit
+                    in New York City, Amazon said it would
+                    expand its AMB services to include
+                    Access and Query functions to enhance
+                    their support for web3 developers.
+                  </p>
+
+                  <p>
+                    With the introduction of AMB Access,
+                    developers can utilize standard remote
+                    procedure calls (RPCs) to interact with
+                    digital assets and distributed
+                    applications across multiple
+                    blockchains, beginning with Bitcoin,
+                    without needing specialized
+                    infrastructure.
+                  </p>
+
+                  <img
+                    src="/Image/hacker.webp"
+                    alt=""
+                  />
+
+                  <p>
+                    At the recent AWS Web3/Blockchain Summit
+                    in New York City, Amazon said it would
+                    expand its AMB services to include
+                    Access and Query functions to enhance
+                    their support for web3 developers.
+                  </p>
+
+                  <p>
+                    With the introduction of AMB Access,
+                    developers can utilize standard remote
+                    procedure calls (RPCs) to interact with
+                    digital assets and distributed
+                    applications across multiple
+                    blockchains, beginning with Bitcoin,
+                    without needing specialized
+                    infrastructure.
+                  </p>
+                  <h3>Growth in web3 continues</h3>
+                  <p>
+                    At the recent AWS Web3/Blockchain Summit
+                    in New York City, Amazon said it would
+                    expand its AMB services to include
+                    Access and Query functions to enhance
+                    their support for web3 developers.
+                  </p>
+
+                  <p>
+                    With the introduction of AMB Access,
+                    developers can utilize standard remote
+                    procedure calls (RPCs) to interact with
+                    digital assets and distributed
+                    applications across multiple
+                    blockchains, beginning with Bitcoin,
+                    without needing specialized
+                    infrastructure.
+                  </p>
+
+                  <img
+                    src="/Image/hacker.webp"
+                    alt=""
+                  />
+
+                  <p>
+                    At the recent AWS Web3/Blockchain Summit
+                    in New York City, Amazon said it would
+                    expand its AMB services to include
+                    Access and Query functions to enhance
+                    their support for web3 developers.
+                  </p>
+
+                  <p>
+                    With the introduction of AMB Access,
+                    developers can utilize standard remote
+                    procedure calls (RPCs) to interact with
+                    digital assets and distributed
+                    applications across multiple
+                    blockchains, beginning with Bitcoin,
+                    without needing specialized
+                    infrastructure.
+                  </p>
+
+                  <div class="post-ad-wrapper">
+                    <img
+                      loading="lazy"
+                      src="/Image/Banner image.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <h3>Growth in web3 continues</h3>
+                  <p>
+                    At the recent AWS Web3/Blockchain Summit
+                    in New York City, Amazon said it would
+                    expand its AMB services to include
+                    Access and Query functions to enhance
+                    their support for web3 developers.
+                  </p>
+
+                  <p>
+                    With the introduction of AMB Access,
+                    developers can utilize standard remote
+                    procedure calls (RPCs) to interact with
+                    digital assets and distributed
+                    applications across multiple
+                    blockchains, beginning with Bitcoin,
+                    without needing specialized
+                    infrastructure.
+                  </p>
+
+                  <div class="tags">
+                    <h4>Tags</h4>
+                    <a href="#">
+                      <span class="tag">HTML</span>
+                    </a>
+                    <a href="#">
+                      <span class="tag">CSS</span>
+                    </a>
+                    <a href="#">
+                      <span class="tag">JavaScript</span>
+                    </a>
+                    <a href="#">
+                      <span class="tag">PHP</span>
+                    </a>
+                  </div>
+
+                  <div class="post-ad-wrapper">
+                    <div class="ad-poster-container">
+                      <div class="post-author-image">
+                        <img
+                          src="/Icons/profile.png"
+                          alt=""
+                        />
+                      </div>
+
+                      <div class="about-author">
+                        <h4>Matilda Schieren</h4>
+
+                        <p>
+                          Matilda Schieren is the Manager of
+                          Content Strategy & Operations at
+                          Sprout Social, where she focuses
+                          on editorial planning, production
+                          and process. Outside of work, she
+                          is a proud mom and cheesesteak
+                          enthusiast.
+                        </p>
+
+                        <a href="">
+                          Read all articles
+                          <i class="fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar">
+              <img
+                style="height: 240px; margin-bottom: 30px"
+                src="/Image/friedman.webp"
+                alt=""
+              />
+
+              <div class="sidebar-sticky">
+                <article class="blog-post">
+                  <div class="post-image">
+                    <img
+                      loading="lazy"
+                      src="/Image/hacker.webp"
+                      alt=""
+                    />
+
+                    <aside class="article-category">
+                      <a href="">News</a>
+                    </aside>
+                  </div>
+
+                  <div class="post-heading">
+                    <h3 class="post-heading-h3">
+                      <a href="">
+                        Altcoins Crash Double Digits,
+                        Bitcoin Dominance Market
+                      </a>
+                    </h3>
+                  </div>
+                </article>
+
+                <article class="blog-post">
+                  <div class="post-image">
+                    <img
+                      loading="lazy"
+                      src="/Image/hacker.webp"
+                      alt=""
+                    />
+
+                    <aside class="article-category">
+                      <a href="">News</a>
+                    </aside>
+                  </div>
+
+                  <div class="post-heading">
+                    <h3 class="post-heading-h3">
+                      <a href="">
+                        Altcoins Crash Double Digits,
+                        Bitcoin Dominance Market
+                      </a>
+                    </h3>
+                  </div>
+                </article>
+
+                <article class="blog-post">
+                  <div class="post-image">
+                    <img
+                      loading="lazy"
+                      src="/Image/hacker.webp"
+                      alt=""
+                    />
+
+                    <aside class="article-category">
+                      <a href="">News</a>
+                    </aside>
+                  </div>
+
+                  <div class="post-heading">
+                    <h3 class="post-heading-h3">
+                      <a href="">
+                        Altcoins Crash Double Digits,
+                        Bitcoin Dominance Market
+                      </a>
+                    </h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="related"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-news spacing-block-end-50">
+        <div class="container">
+          <div class="featured-container">
+            <div class="post-section-header">
+              <h2 class="">CRYPTO INSIGHTS</h2>
+            </div>
+
+            <div class="col-grid featured-block-container">
+              <!-- --------- article news block start ------------ -->
+              <article class="blog-post grid-clild-span-4">
+                <div class="post-image">
+                  <img
+                    loading="lazy"
+                    src="/Image/charts.webp"
+                    alt=""
+                  />
+                  <aside class="article-category">
+                    <a href="">News</a>
+                  </aside>
+                </div>
+
+                <div class="post-heading">
+                  <h3 class="Blog-page-h3">
+                    <a href="">
+                      Altcoins Crash Double Digits, Bitcoin
+                      Dominance Market
+                    </a>
+                  </h3>
+                </div>
+
+                <div class="post-details">
+                  <div class="post-author">
+                    <img
+                      loading="lazy"
+                      src="/Icons/profile.png"
+                      alt=""
+                      class="author-image"
+                    />
+
+                    <p>emmanuel</p>
+                  </div>
+
+                  <a
+                    href=""
+                    class="read-more"
+                  >
+                    read more
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- article news block start ------------ -->
+
+              <!-- --------- article news block start ------------ -->
+
+              <article class="blog-post grid-clild-span-4">
+                <div class="post-image">
+                  <img
+                    loading="lazy"
+                    src="/Image/hacker.webp"
+                    alt=""
+                  />
+                  <aside class="article-category">
+                    <a href="">News</a>
+                  </aside>
+                </div>
+
+                <div class="post-heading">
+                  <h3>
+                    <a href="">
+                      Altcoins Crash Double Digits, Bitcoin
+                      Dominance Market
+                    </a>
+                  </h3>
+                </div>
+
+                <div class="post-details">
+                  <div class="post-author">
+                    <img
+                      loading="lazy"
+                      src="/Icons/profile.png"
+                      alt=""
+                      class="author-image"
+                    />
+
+                    <p>emmanuel</p>
+                  </div>
+
+                  <a
+                    href=""
+                    class="read-more"
+                  >
+                    read more
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- --------- article news block start ------------ -->
+              <article class="blog-post grid-clild-span-4">
+                <div class="post-image">
+                  <img
+                    loading="lazy"
+                    src="/Image/ai.webp"
+                    alt=""
+                  />
+                  <aside class="article-category">
+                    <a href="">News</a>
+                  </aside>
+                </div>
+
+                <div class="post-heading">
+                  <h3>
+                    <a href="">
+                      Altcoins Crash Double Digits, Bitcoin
+                      Dominance Market
+                    </a>
+                  </h3>
+                </div>
+
+                <div class="post-details">
+                  <div class="post-author">
+                    <img
+                      loading="lazy"
+                      src="/Icons/profile.png"
+                      alt=""
+                      class="author-image"
+                    />
+
+                    <p>emmanuel</p>
+                  </div>
+
+                  <a
+                    href=""
+                    class="read-more"
+                  >
+                    read more
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </article>
+              <!-- --------- article news block start ------------ -->
+            </div>
+            <!-- --------- 25 block end ------------ -->
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="col-grid featured-block-container">
+              <!-- ----------------------------- three news block starts------------------------------- ------------ -->
+
+              <div class="logo-grid grid-clild-span-5">
+                <div class="logo-footer-container">
+                  <img
+                    loading="lazy"
+                    src="/Icons/logo full png.png"
+                    alt=""
+                  />
+                </div>
+                <div class="footer-links">
+                  <li class="">
+                    <a href="">US: +300 4500 2398</a>
+                  </li>
+                  <li class="">
+                    <a href="">www.coinbic.com</a>
+                  </li>
+                </div>
+
+                <div class="footer-links">
+                  <li class="">
+                    <a href="">contact@coinbic.com</a>
+                  </li>
+                  <li class="">
+                    <a href="">No 7 washinton street usa</a>
+                  </li>
+                </div>
+
+                <div class="footer-socials">
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-discord"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- ----------------------------- three news block starts------------------------------- ------------ -->
+              <div class="grid-clild-span-2"></div>
+
+              <!-- ----------------------------- footer block starts------------------------------- ------------ -->
+
+              <div
+                class="right-grid grid-clild-span-6 footer-text"
+              >
+                <!-- -----------------------links for company------------------------------ -->
+                <div class="company-links grid-clild-span-">
+                  <h4>Company</h4>
+
+                  <div class="company-links-container">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blogging</a></li>
+                    <li><a href="">Indicators</a></li>
+                    <li><a href="">Free signals</a></li>
+                  </div>
+                </div>
+                <!-- -----------------------links for company------------------------------ -->
+                <!-- -----------------------links for company------------------------------ -->
+                <div class="company-links grid-clild-span-">
+                  <h4>Company</h4>
+
+                  <div class="company-links-container">
+                    <li><a href="">Affiliate</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Pricing</a></li>
+                  </div>
+                </div>
+                <!-- -----------------------links for company------------------------------ -->
+                <!-- -----------------------links for company------------------------------ -->
+                <div class="company-links grid-clild-span-">
+                  <h4>Company</h4>
+
+                  <div class="company-links-container">
+                    <li><a href="">Pathnership</a></li>
+                    <li><a href="">Commumity</a></li>
+                    <li><a href="">Confrence</a></li>
+                    <li><a href="">Bitcoin</a></li>
+                  </div>
+                </div>
+                <!-- -----------------------links for company------------------------------ -->
+              </div>
+
+              <!-- ----------------------------- footer news block starts------------------------------- ------------ -->
+
+              <!-- -----------------------links for company------------------------------ -->
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            <i class="fa-solid fa-circle-dot"></i>
+            2023 coinbic.com
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/app.js"></script>
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+  </body>
+</html>
